@@ -44,12 +44,14 @@ func main() {
 		Name:   "Subway",
 		Offers: []Offer{offer6, offer7, offer8},
 	}
+	//made a list of restaurants having two objects
 	restaurants := []Restaurant{r, r2}
 	newSlice2 := getRentalRewardIds(restaurants)
 
 	fmt.Println("Reward Ids of offers with type 'rental' from the list of restaurant is:", newSlice2)
 }
 
+//function to get reward ids of restaurants with offer of type rental
 func getRentalRewardIds(restaurants []Restaurant) []int {
 	newSlice2 := make([]int, 0)
 
